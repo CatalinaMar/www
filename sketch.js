@@ -1,10 +1,12 @@
 function setup() {
-createCanvas(400,400) 
+createCanvas(innerHeight,innerWidth) 
 }
 
 function draw() {
+    strokeWeight(5);
     ellipse(200,200,200,200)
-        ellipse(250,250,250,250)
-    ellipse(300,300,300,300)
-        ellipse(400,400,400,400)
+        ellipse(160,180,10,10)
+        arc(235, 190, 40, 40, radians(200), radians(345)); 
+        arc(200, 210, 80, 80, radians(385), radians(150)); 
+
 }
