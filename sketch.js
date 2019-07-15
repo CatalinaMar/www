@@ -1,7 +1,7 @@
 let angle = 0;
 
 function setup() {
-createCanvas(400, 400); 
+createCanvas(windowWidth, 200); 
 }
 
 function draw() {
@@ -18,11 +18,11 @@ function draw() {
     
     
     let offset = 0;
-    for (let x = 0; x < width; x += 8) {
+    for (let x = 0; x < width; x += 10) {
         let a = angle + offset;
-        let h = map(sin(a), -1, 1, 0, 100); //para que haga arriba y abajo)//
+        let h = map(sin(a), -1, 1, 0, 150); //para que haga arriba y abajo)//
         fill(255);
-        rect(x - width / 2, 0, 10, h); //propiedades de la recta ; (posicion,//
+        rect(x - width / 2, 0, 3, h); //propiedades de la recta ; (posicion,//
         offset += 0.25;
     
   
@@ -30,4 +30,8 @@ function draw() {
     
     angle += 0.1;
 
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, 200);
 }
