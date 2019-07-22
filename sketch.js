@@ -23,7 +23,7 @@ function draw() {
         let h = map(sin(a), -1, 1, 0, 150); //para que haga arriba y abajo)//
         fill(255);
         rect(x - width / 2, 0, 3, h); //propiedades de la recta ; (posicion,//
-        offset += 0.25;
+        offset += 0.3;
     
   
     }
